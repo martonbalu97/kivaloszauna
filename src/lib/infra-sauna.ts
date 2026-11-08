@@ -1,0 +1,1 @@
+export const infraSaunaTemperature = { min: 40, max: 60 };

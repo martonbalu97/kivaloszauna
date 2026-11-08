@@ -1,0 +1,20 @@
+# Tasks
+- [x] Audit all navigation; connect carousel CTAs to detail pages and About CTA to About; verify all links.
+- [x] Add shared contact and navigation footer to all pages; verify links and mobile layout.
+- [x] Add scroll-triggered mobile flips and desktop hover flips to About cards with text on their backs; verify reading and motion.
+- [x] Create About page from supplied reference themes with existing photos, menu navigation and responsive verification.
+- [x] Remove combined sauna parenthetical label and keep infrared temperature on one line.
+- [x] Unify photo frames across galleries and catalogue without cropping; verify desktop/mobile and carousel.
+- [x] Add infrared sauna page with supplied copy and two photos; warm the pale photo, connect menu and verify.
+- [x] Add Finnish sauna service page with supplied description and four photos; connect menu and verify mobile/desktop.
+- [x] Add combined sauna service page with supplied copy and four photos; connect menu and verify mobile/desktop.
+- [x] Add the Freya mini sauna page with supplied specifications, three photos and menu navigation; verify rules and mobile/desktop flow.
+- [x] Add the Szaunaház service page with supplied copy, five photos and menu navigation; verify mobile and desktop.
+- [x] Add the Sókabin és Sókamra service page, supplied photos, and services menu link; verify on mobile and desktop.
+- [x] Add the commercial sauna service page with the supplied text and both hotel photo galleries.
+- [x] Add the services dropdown with all seven homepage sauna types and matching photo selection.
+- [x] Move contact details before the form with small elegant text and icons.
+- [x] Add supplied contact details to footer.
+- [x] Disable submission storage at user's request and remove test enquiry.
+- [ ] Enable real submission delivery — blocked because storage was declined and email domain is unverified.
+- [x] Verify form and explain inactive sending status.

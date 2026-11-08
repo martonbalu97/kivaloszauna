@@ -1,0 +1,1 @@
+export const finnSaunaTemperature = { min: 70, max: 100 } as const;
