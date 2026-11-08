@@ -32,7 +32,25 @@ Vercel uses the Nitro Vite plugin to build the TanStack Start server as Vercel F
 
 ## Environment variables
 
-No Supabase environment variables are required. Add future server-side secrets (for example, `RESEND_API_KEY` when email sending is implemented) in Vercel Project Settings → Environment Variables. Never commit `.env` files or put private keys in variables prefixed with `VITE_`.
+No Supabase environment variables are required.
+
+### Resend contact form
+
+The contact form sends submissions server-side through the Resend HTTP API:
+
+- From: `Kiváló Szauna <noreply@kivaloszauna.hu>`
+- To: `info@kivaloszauna.hu`
+- Reply-To: the email address entered by the visitor
+
+Before enabling delivery:
+
+1. Add and verify `kivaloszauna.hu` in the Resend dashboard.
+2. Publish the DNS records Resend provides (typically SPF and DKIM; follow the exact records shown in your Resend account).
+3. Create a Resend API key with permission to send email.
+4. In Vercel → Project → Settings → Environment Variables, add `RESEND_API_KEY` for Production (and Preview if desired).
+5. Redeploy the project after adding or changing the variable.
+
+For local testing, copy `.env.example` to `.env` and put the real key in `RESEND_API_KEY`. Never commit `.env` files or expose the key through a `VITE_` variable. The key is read only by the server-side contact function.
 
 ## Local image assets
 
