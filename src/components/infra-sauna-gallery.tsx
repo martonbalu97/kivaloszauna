@@ -1,9 +1,9 @@
-import photo from "@/assets/infra-reference-1.jpg.asset.json";
+import photo from "@/assets/infra-reference-1.jpg";
 import warmPhoto from "@/assets/infra-reference-warm.jpg";
 
-export const infraSaunaCover = photo;
+export const infraSaunaCover = { url: photo };
 const photos = [
-  { url: photo.url, width: 1920, height: 1280, alt: "Aranyszínű fa infraszauna sarokpaddal és fekete sugárzókkal" },
+  { url: photo, width: 1920, height: 1280, alt: "Aranyszínű fa infraszauna sarokpaddal és fekete sugárzókkal" },
   { url: warmPhoto, width: 1920, height: 1440, alt: "Meleg aranysárga tónusú infraszauna padozata és sugárzói" },
 ];
 

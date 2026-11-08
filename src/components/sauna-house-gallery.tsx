@@ -1,17 +1,17 @@
-import photo1 from "@/assets/outdoor-sauna-1.jpg.asset.json";
-import photo2 from "@/assets/outdoor-sauna-2.jpg.asset.json";
-import photo3 from "@/assets/outdoor-sauna-3.jpg.asset.json";
-import photo4 from "@/assets/outdoor-sauna-4.jpg.asset.json";
-import photo5 from "@/assets/outdoor-sauna-5.jpg.asset.json";
+import photo1 from "@/assets/outdoor-sauna-1.jpg";
+import photo2 from "@/assets/outdoor-sauna-2.jpg";
+import photo3 from "@/assets/outdoor-sauna-3.jpg";
+import photo4 from "@/assets/outdoor-sauna-4.jpg";
+import photo5 from "@/assets/outdoor-sauna-5.jpg";
 
-export const saunaHouseCover = photo5;
+export const saunaHouseCover = { url: photo5 };
 
 const photos = [
-  { asset: photo5, width: 1500, height: 1000, alt: "Kültéri szaunaház a kertben" },
-  { asset: photo1, width: 1080, height: 1080, alt: "Üvegfalú szaunaház esti hangulatvilágítással" },
-  { asset: photo2, width: 1080, height: 1080, alt: "Prémium szaunaház egyedi kialakítása" },
-  { asset: photo3, width: 960, height: 960, alt: "Modern üvegfelületes szaunaház a teraszon" },
-  { asset: photo4, width: 1500, height: 1000, alt: "Szaunaház pihenőtere nyugágyakkal és megvilágított sófallal" },
+  { asset: { url: photo5 }, width: 1500, height: 1000, alt: "Kültéri szaunaház a kertben" },
+  { asset: { url: photo1 }, width: 1080, height: 1080, alt: "Üvegfalú szaunaház esti hangulatvilágítással" },
+  { asset: { url: photo2 }, width: 1080, height: 1080, alt: "Prémium szaunaház egyedi kialakítása" },
+  { asset: { url: photo3 }, width: 960, height: 960, alt: "Modern üvegfelületes szaunaház a teraszon" },
+  { asset: { url: photo4 }, width: 1500, height: 1000, alt: "Szaunaház pihenőtere nyugágyakkal és megvilágított sófallal" },
 ];
 
 export function SaunaHouseGallery() {

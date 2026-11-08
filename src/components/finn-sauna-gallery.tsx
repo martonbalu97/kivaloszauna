@@ -1,14 +1,14 @@
-import photo1 from "@/assets/finn-reference-1.jpg.asset.json";
-import photo2 from "@/assets/finn-reference-2.jpg.asset.json";
-import photo3 from "@/assets/finn-reference-3.jpg.asset.json";
-import photo4 from "@/assets/finn-reference-4.jpg.asset.json";
+import photo1 from "@/assets/finn-reference-1.jpg";
+import photo2 from "@/assets/finn-reference-2.jpg";
+import photo3 from "@/assets/finn-reference-3.jpg";
+import photo4 from "@/assets/finn-reference-4.jpg";
 
-export const finnSaunaCover = photo1;
+export const finnSaunaCover = { url: photo1 };
 const photos = [
-  { asset: photo1, width: 1600, height: 900, alt: "Finn szauna természetes faburkolattal, sarokpaddal és Harvia kályhával" },
-  { asset: photo2, width: 1440, height: 1920, alt: "Világos fa finn szauna üvegajtóval és rejtett világítással" },
-  { asset: photo3, width: 1440, height: 1920, alt: "Egyedi üvegfrontos finn szaunakabin otthoni környezetben" },
-  { asset: photo4, width: 1440, height: 1920, alt: "Finn szauna kályhája és megvilágított padozata" },
+  { asset: { url: photo1 }, width: 1600, height: 900, alt: "Finn szauna természetes faburkolattal, sarokpaddal és Harvia kályhával" },
+  { asset: { url: photo2 }, width: 1440, height: 1920, alt: "Világos fa finn szauna üvegajtóval és rejtett világítással" },
+  { asset: { url: photo3 }, width: 1440, height: 1920, alt: "Egyedi üvegfrontos finn szaunakabin otthoni környezetben" },
+  { asset: { url: photo4 }, width: 1440, height: 1920, alt: "Finn szauna kályhája és megvilágított padozata" },
 ];
 
 export function FinnSaunaGallery() {

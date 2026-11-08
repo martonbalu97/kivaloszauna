@@ -1,14 +1,14 @@
-import photo1 from "@/assets/combined-reference-1.jpg.asset.json";
-import photo2 from "@/assets/combined-reference-2.jpg.asset.json";
-import photo3 from "@/assets/combined-reference-3.jpg.asset.json";
-import photo4 from "@/assets/combined-reference-4.jpg.asset.json";
+import photo1 from "@/assets/combined-reference-1.jpg";
+import photo2 from "@/assets/combined-reference-2.jpg";
+import photo3 from "@/assets/combined-reference-3.jpg";
+import photo4 from "@/assets/combined-reference-4.jpg";
 
-export const combinedSaunaCover = photo1;
+export const combinedSaunaCover = { url: photo1 };
 const photos = [
-  { asset: photo1, width: 1920, height: 1440, alt: "Kombinált szauna finn kályhával, infrasugárzókkal és rejtett világítással" },
-  { asset: photo2, width: 1440, height: 1920, alt: "Üvegfrontos kombinált szauna sarokpaddal" },
-  { asset: photo3, width: 1440, height: 1920, alt: "Világos fa kombinált szauna padozat alatti hangulatvilágítással" },
-  { asset: photo4, width: 1440, height: 1920, alt: "Panoráma kombinált szauna kertre néző üvegfelülettel" },
+  { asset: { url: photo1 }, width: 1920, height: 1440, alt: "Kombinált szauna finn kályhával, infrasugárzókkal és rejtett világítással" },
+  { asset: { url: photo2 }, width: 1440, height: 1920, alt: "Üvegfrontos kombinált szauna sarokpaddal" },
+  { asset: { url: photo3 }, width: 1440, height: 1920, alt: "Világos fa kombinált szauna padozat alatti hangulatvilágítással" },
+  { asset: { url: photo4 }, width: 1440, height: 1920, alt: "Panoráma kombinált szauna kertre néző üvegfelülettel" },
 ];
 
 export function CombinedSaunaGallery() {

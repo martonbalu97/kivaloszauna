@@ -1,12 +1,12 @@
-import photo1 from "@/assets/freya-mini-1.jpg.asset.json";
-import photo2 from "@/assets/freya-mini-2.jpg.asset.json";
-import photo3 from "@/assets/freya-mini-3.jpg.asset.json";
+import photo1 from "@/assets/freya-mini-1.jpg";
+import photo2 from "@/assets/freya-mini-2.jpg";
+import photo3 from "@/assets/freya-mini-3.jpg";
 
-export const freyaMiniCover = photo1;
+export const freyaMiniCover = { url: photo1 };
 const photos = [
-  { asset: photo1, width: 1000, height: 1195, alt: "Kompakt mini szauna otthoni környezetben" },
-  { asset: photo2, width: 1000, height: 811, alt: "Üvegfrontos mini finn szauna a fürdőszobában" },
-  { asset: photo3, width: 1000, height: 811, alt: "Mini szauna világos belső térben" },
+  { asset: { url: photo1 }, width: 1000, height: 1195, alt: "Kompakt mini szauna otthoni környezetben" },
+  { asset: { url: photo2 }, width: 1000, height: 811, alt: "Üvegfrontos mini finn szauna a fürdőszobában" },
+  { asset: { url: photo3 }, width: 1000, height: 811, alt: "Mini szauna világos belső térben" },
 ];
 
 export function FreyaMiniGallery() {

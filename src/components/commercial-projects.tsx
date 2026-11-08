@@ -1,13 +1,13 @@
-import ozon1 from "@/assets/ozon-project-1.jpg.asset.json";
-import ozon2 from "@/assets/ozon-project-2.jpg.asset.json";
-import ozon3 from "@/assets/ozon-project-3.jpg.asset.json";
-import ozon4 from "@/assets/ozon-project-4.jpg.asset.json";
-import botaniq1 from "@/assets/botaniq-project-1.jpg.asset.json";
-import botaniq2 from "@/assets/botaniq-project-2.jpg.asset.json";
-import botaniq3 from "@/assets/botaniq-project-3.jpg.asset.json";
-import botaniq4 from "@/assets/botaniq-project-4.jpg.asset.json";
+import ozon1 from "@/assets/ozon-project-1.jpg";
+import ozon2 from "@/assets/ozon-project-2.jpg";
+import ozon3 from "@/assets/ozon-project-3.jpg";
+import ozon4 from "@/assets/ozon-project-4.jpg";
+import botaniq1 from "@/assets/botaniq-project-1.jpg";
+import botaniq2 from "@/assets/botaniq-project-2.jpg";
+import botaniq3 from "@/assets/botaniq-project-3.jpg";
+import botaniq4 from "@/assets/botaniq-project-4.jpg";
 
-export const commercialCover = ozon1;
+export const commercialCover = { url: ozon1 };
 
 export const commercialProjects = [
   {
@@ -16,10 +16,10 @@ export const commercialProjects = [
     scope: ["1 db nagy kapacitású, maximum 36 fős közületi panoráma finn szauna a wellness részlegen", "11 db egyedi gyártású, legfeljebb 3 fős privát finn szauna a luxusvillákban"],
     description: "A Hotel Ózon & Luxury Villas megbízása során a feladat a nagyszabású közösségi szaunaélmény és az intim luxus párhuzamos megteremtése volt. A wellness részleg központi elemeként megtervezett 36 fős közületi szauna egyszerre biztosít lenyűgöző látványt és hatalmas fűtési stabilitást szaunamesteri felöntések során is. Ezzel párhuzamosan a különálló villákba épített privát kabinok milliméterpontos illesztéssel, a prémium belsőépítészeti környezethez igazodva készültek el az alapoktól a végső átadásig.",
     photos: [
-      { asset: ozon1, width: 900, height: 600, alt: "Hotel Ózon panoráma finn szaunája" },
-      { asset: ozon2, width: 900, height: 600, alt: "Hotel Ózon luxusvilla privát szaunája" },
-      { asset: ozon3, width: 900, height: 600, alt: "Hotel Ózon üvegfalú privát szaunája" },
-      { asset: ozon4, width: 900, height: 599, alt: "Hotel Ózon wellness részlegének szaunája" },
+      { asset: { url: ozon1 }, width: 900, height: 600, alt: "Hotel Ózon panoráma finn szaunája" },
+      { asset: { url: ozon2 }, width: 900, height: 600, alt: "Hotel Ózon luxusvilla privát szaunája" },
+      { asset: { url: ozon3 }, width: 900, height: 600, alt: "Hotel Ózon üvegfalú privát szaunája" },
+      { asset: { url: ozon4 }, width: 900, height: 599, alt: "Hotel Ózon wellness részlegének szaunája" },
     ],
   },
   {
@@ -28,10 +28,10 @@ export const commercialProjects = [
     scope: ["1 db egyedi építésű, boltozatos, ívelt padozatú prémium közületi finn szauna"],
     description: "Egy történelmi kastélyépület belső tereiben alkotni mindig különleges felelősség. A Botaniq Turai Kastély projektjénél a helyszín egyedi adottságaihoz alkalmazkodva a klasszikus szögletes formavilág helyett egy organikus, boltozatos mennyezetet és lágyan ívelt padozatot terveztünk és kiviteleztünk. A precíz mérnöki munka és a kézműves asztalosmunka ötvözése révén a kabin maximálisan kihasználja a rendelkezésre álló teret, miközben harmonikusan illeszkedik a kastély elegáns, arisztokratikus atmoszférájához.",
     photos: [
-      { asset: botaniq1, width: 960, height: 1280, alt: "Botaniq Turai Kastély ívelt szaunapadozata" },
-      { asset: botaniq2, width: 1350, height: 1800, alt: "Botaniq Turai Kastély boltozatos szaunája" },
-      { asset: botaniq3, width: 1350, height: 1800, alt: "Botaniq Turai Kastély rejtett szaunavilágítása" },
-      { asset: botaniq4, width: 1350, height: 1800, alt: "Botaniq Turai Kastély egyedi szaunabelsője" },
+      { asset: { url: botaniq1 }, width: 960, height: 1280, alt: "Botaniq Turai Kastély ívelt szaunapadozata" },
+      { asset: { url: botaniq2 }, width: 1350, height: 1800, alt: "Botaniq Turai Kastély boltozatos szaunája" },
+      { asset: { url: botaniq3 }, width: 1350, height: 1800, alt: "Botaniq Turai Kastély rejtett szaunavilágítása" },
+      { asset: { url: botaniq4 }, width: 1350, height: 1800, alt: "Botaniq Turai Kastély egyedi szaunabelsője" },
     ],
   },
 ];

@@ -1,15 +1,15 @@
-import salt1 from "@/assets/salt-cabin-1.jpg.asset.json";
-import salt2 from "@/assets/salt-cabin-2.jpg.asset.json";
-import salt3 from "@/assets/salt-cabin-3.jpg.asset.json";
-import salt4 from "@/assets/salt-cabin-4.jpg.asset.json";
+import salt1 from "@/assets/salt-cabin-1.jpg";
+import salt2 from "@/assets/salt-cabin-2.jpg";
+import salt3 from "@/assets/salt-cabin-3.jpg";
+import salt4 from "@/assets/salt-cabin-4.jpg";
 
-export const saltCover = salt1;
+export const saltCover = { url: salt1 };
 
 const photos = [
-  { asset: salt1, alt: "Sókamra kék rejtett világítással és ívelt padozattal" },
-  { asset: salt2, alt: "Egyedi sókamra megvilágított sófalai" },
-  { asset: salt3, alt: "Sókabin belső kialakítása és sótömbös falburkolata" },
-  { asset: salt4, alt: "Sókabin részletei és hangulatvilágítása" },
+  { asset: { url: salt1 }, alt: "Sókamra kék rejtett világítással és ívelt padozattal" },
+  { asset: { url: salt2 }, alt: "Egyedi sókamra megvilágított sófalai" },
+  { asset: { url: salt3 }, alt: "Sókabin belső kialakítása és sótömbös falburkolata" },
+  { asset: { url: salt4 }, alt: "Sókabin részletei és hangulatvilágítása" },
 ];
 
 export function SaltGallery() {

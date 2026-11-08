@@ -3,22 +3,22 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
-import finn from "@/assets/finn-sauna-retouched.jpg.asset.json";
-import mini from "@/assets/mini-sauna.jpg.asset.json";
-import infra from "@/assets/infra.jpg.asset.json";
-import combined from "@/assets/combined-sauna.jpg.asset.json";
-import house from "@/assets/sauna-house.jpg.asset.json";
-import commercial from "@/assets/commercial-sauna.jpg.asset.json";
-import salt from "@/assets/salt-room.jpg.asset.json";
+import finn from "@/assets/finn-sauna-retouched.png";
+import mini from "@/assets/mini-sauna.jpg";
+import infra from "@/assets/infra.jpg";
+import combined from "@/assets/combined-sauna.jpg";
+import house from "@/assets/sauna-house.jpg";
+import commercial from "@/assets/commercial-sauna.jpg";
+import salt from "@/assets/salt-room.jpg";
 
 export const saunaTypes = [
-  { name: "Finn szauna", to: "/finn-szauna", image: finn.url, alt: "Finn szauna", width: 928, height: 1152 },
-  { name: "2 fős mini finn szauna", to: "/freya-mini-szauna", image: mini.url, alt: "2 fős mini finn szauna", width: 1200, height: 1600 },
-  { name: "Infraszauna", to: "/infraszauna", image: infra.url, alt: "Infraszauna", width: 1920, height: 1280 },
-  { name: "Kombinált szauna", to: "/kombinalt-szauna", image: combined.url, alt: "Kombinált szauna", width: 1440, height: 1920 },
-  { name: "Szaunaház", to: "/szaunahaz", image: house.url, alt: "Szaunaház", width: 1332, height: 2000 },
-  { name: "Közületi szauna", to: "/kozuleti-szaunak", image: commercial.url, alt: "Közületi szauna", width: 900, height: 600 },
-  { name: "Sókamra", to: "/sokabin-es-sokamra", image: salt.url, alt: "Sókamra", width: 1440, height: 1920 },
+  { name: "Finn szauna", to: "/finn-szauna", image: finn, alt: "Finn szauna", width: 928, height: 1152 },
+  { name: "2 fős mini finn szauna", to: "/freya-mini-szauna", image: mini, alt: "2 fős mini finn szauna", width: 1200, height: 1600 },
+  { name: "Infraszauna", to: "/infraszauna", image: infra, alt: "Infraszauna", width: 1920, height: 1280 },
+  { name: "Kombinált szauna", to: "/kombinalt-szauna", image: combined, alt: "Kombinált szauna", width: 1440, height: 1920 },
+  { name: "Szaunaház", to: "/szaunahaz", image: house, alt: "Szaunaház", width: 1332, height: 2000 },
+  { name: "Közületi szauna", to: "/kozuleti-szaunak", image: commercial, alt: "Közületi szauna", width: 900, height: 600 },
+  { name: "Sókamra", to: "/sokabin-es-sokamra", image: salt, alt: "Sókamra", width: 1440, height: 1920 },
 ] as const;
 
 export function SaunaTypes({ selected, onSelect }: { selected: number; onSelect: (index: number) => void }) {

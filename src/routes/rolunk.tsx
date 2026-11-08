@@ -5,9 +5,9 @@ import { ServicesMenu } from "@/components/services-menu";
 import { SectionDivider } from "@/components/section-divider";
 import { AboutFlipCard } from "@/components/about-flip-card";
 import { SiteFooter } from "@/components/site-footer";
-import finn from "@/assets/finn-reference-1.jpg.asset.json";
-import curved from "@/assets/botaniq-project-1.jpg.asset.json";
-import house from "@/assets/outdoor-sauna-5.jpg.asset.json";
+import finn from "@/assets/finn-reference-1.jpg";
+import curved from "@/assets/botaniq-project-1.jpg";
+import house from "@/assets/outdoor-sauna-5.jpg";
 
 export const Route = createFileRoute("/rolunk")({
   head: () => ({ meta: [
@@ -22,9 +22,9 @@ export const Route = createFileRoute("/rolunk")({
 });
 
 const values = [
-  { image: curved.url, width: 960, height: 1280, alt: "Kézműves pontossággal kialakított ívelt szaunapadok", title: "Több évtizedes tapasztalat", text: "Immár 30 éve dolgozunk fával. A megszerzett tudást minden új szaunában tovább visszük: az anyagválasztástól a legapróbb illesztésig." },
-  { image: finn.url, width: 1600, height: 900, alt: "Egyedi finn szauna gondosan kidolgozott faburkolattal", title: "Maximalizmus és kiváló minőség", text: "Olyan szaunákat készítünk, amelyekben mi magunk is örömmel pihennénk. A minőséget nem egyetlen látványos részlet, hanem az egész kabin gondos kidolgozása adja." },
-  { image: house.url, width: 1500, height: 1000, alt: "Egyedileg tervezett panorámaüveges kültéri szaunaház", title: "Egyedi tervezés és kivitelezés", text: "Nincs két egyforma otthon és két egyforma elképzelés. Minden szaunát az Ön igényeihez, a rendelkezésre álló térhez és a környezet stílusához igazítunk." },
+  { image: curved, width: 960, height: 1280, alt: "Kézműves pontossággal kialakított ívelt szaunapadok", title: "Több évtizedes tapasztalat", text: "Immár 30 éve dolgozunk fával. A megszerzett tudást minden új szaunában tovább visszük: az anyagválasztástól a legapróbb illesztésig." },
+  { image: finn, width: 1600, height: 900, alt: "Egyedi finn szauna gondosan kidolgozott faburkolattal", title: "Maximalizmus és kiváló minőség", text: "Olyan szaunákat készítünk, amelyekben mi magunk is örömmel pihennénk. A minőséget nem egyetlen látványos részlet, hanem az egész kabin gondos kidolgozása adja." },
+  { image: house, width: 1500, height: 1000, alt: "Egyedileg tervezett panorámaüveges kültéri szaunaház", title: "Egyedi tervezés és kivitelezés", text: "Nincs két egyforma otthon és két egyforma elképzelés. Minden szaunát az Ön igényeihez, a rendelkezésre álló térhez és a környezet stílusához igazítunk." },
 ];
 const services = [
   { icon: PencilRuler, title: "Helyszíni felmérés", text: "Személyesen megismerjük a helyszínt, átbeszéljük az elképzeléseit és a műszaki lehetőségeket, hogy a tervezés biztos alapokra épüljön." },
@@ -39,7 +39,7 @@ function About() {
   return <main className="bg-background text-foreground">
     <header className="absolute inset-x-0 top-0 z-10 flex justify-end px-6 py-6 md:px-12"><nav aria-label="Főmenü"><ServicesMenu /></nav></header>
     <section className="relative flex min-h-[65svh] items-end bg-ink text-ink-foreground">
-      <img src={house.url} width={1500} height={1000} alt="Kiváló Szauna egyedi kültéri szaunaház a kertben" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={house} width={1500} height={1000} alt="Kiváló Szauna egyedi kültéri szaunaház a kertben" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
       <div className="relative mx-auto w-full max-w-6xl px-6 pb-12 pt-32 md:px-12">
         <p className="mb-4 text-xs uppercase text-primary">Kiváló Szauna · Rólunk</p>

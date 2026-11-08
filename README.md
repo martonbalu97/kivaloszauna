@@ -34,6 +34,6 @@ Vercel uses the Nitro Vite plugin to build the TanStack Start server as Vercel F
 
 No Supabase environment variables are required. Add future server-side secrets (for example, `RESEND_API_KEY` when email sending is implemented) in Vercel Project Settings → Environment Variables. Never commit `.env` files or put private keys in variables prefixed with `VITE_`.
 
-## Important asset migration note
+## Local image assets
 
-Some gallery images are currently represented by `.jpg.asset.json` files that point to Lovable-only `/__l5e/assets-v1/...` paths. The original image binaries are not included in this source archive. Those images must be downloaded from the Lovable project and copied into this repository (for example, under `public/images/`), then their references updated before the Vercel site can display every gallery image.
+All images are imported directly from `src/assets` using Vite asset imports. The former `.asset.json` sidecar files and Lovable `/__l5e/assets-v1/` URLs are no longer used. The `finn-sauna-retouched` image is stored as a PNG (`finn-sauna-retouched.png`).
