@@ -87,6 +87,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+       {
+      rel: "icon",
+      href: "https://kivaloszauna.hu/wp-content/uploads/2022/05/cropped-favicon-32x32.jpg",
+      sizes: "32x32",
+    },
+    {
+      rel: "icon",
+      href: "https://kivaloszauna.hu/wp-content/uploads/2022/05/cropped-favicon-192x192.jpg",
+      sizes: "192x192",
+    },
+    {
+      rel: "apple-touch-icon",
+      href: "https://kivaloszauna.hu/wp-content/uploads/2022/05/cropped-favicon-180x180.jpg",
+    },
+    {
+      rel: "msapplication-TileImage",
+      href: "https://kivaloszauna.hu/wp-content/uploads/2022/05/cropped-favicon-270x270.jpg",
+    },
     ],
   }),
   shellComponent: RootShell,
